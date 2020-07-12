@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*header*/
+.header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+/*left*/
+.header-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 100px;
+}
+.header-left img{
+    width: 180px;
+    height: 50px;
+    margin: 15px 80px 0 0;
+}
+#header-nav{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+#header-nav li{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+#header-nav li a{
+    text-decoration: none;
+    color: grey;
+    width: 100px;
+    height: 72px;
+    border-bottom: 2px white solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#header-nav li a:hover{
+    color: #2a8bcc;
+    border-bottom: 2px #2a8bcc solid ;
+}
+
+#link0 div{
+    font-size: 12px;
+    background-color: dodgerblue;
+    color: white;
+}
+/*right*/
+.header-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#header-nav2{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+.header-right li{
+    width: 120px;
+    height: 42px;
+    text-align: center;
+    margin-right: 10px;
+}
+.header-right li a{
+    text-decoration: none;
+    font-size: 14px;
+}
+#right1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: dodgerblue;
+}
+#right1 a{
+    color: white;
+}
+#right1:hover{
+    background-color: royalblue;
+}
+#right2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dodgerblue solid;
+}
+#right2 a{
+    color: dodgerblue;
+}
+#right2:hover{
+    background-color: whitesmoke;
+}
+/*banner*/
+.banner{
+    height: 760px;
+    background-image: url("img/bg-banner.jpg") ;
+}
+.banner-box{
+    height: 760px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: fadeIn; /*动画名称*/
+    animation-duration: 1s; /*动画持续时间*/
+    animation-iteration-count: 1; /*动画次数*/
+    animation-delay: 0s; /*延迟时间*/
+}
+.banner-computer{
+    width: 671px;
+    height: 419px;
+    background-image: url("img/banner-win.png");
+    background-size: cover;
+}
+.banner-left{
+    margin-left: 45px;
+}
+
+.banner-left h1{
+    font-size: 52px;
+    color: white;
+}
+.banner-left h2{
+    font-size: 24px;
+    font-weight: 300;
+    color: white;
+    margin-top: 10px;
+}
+.btn-banner{
+    margin-top: 75px;
+}
+.btn-banner a{
+    text-decoration: none;
+}
+.btn-banner #btn-down{
+    padding: 17px 54px;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 18px;
+    font-weight: 550;
+    border-radius: 4px;
+}
+.btn-banner #btn-down:hover{
+    background-color: royalblue;
+}
+.btn-banner #btn-to{
+    padding: 17px 45px;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    font-weight: 550;
+    border-radius: 4px;
+    margin-left: 20px;
+}
+.btn-banner #btn-to:hover{
+    background-color: whitesmoke;
+}
+.btn-banner #version-info{
+    margin-top: 45px;
+    font-size: 14px;
+    color: #ffffff;
+    opacity: 0.7;
+}
+/*section*/
+/*wrapa*/
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0; /*初始状态 透明度为0*/
+    }
+    100% {
+        opacity: 1; /*结尾状态 透明度为1*/
+    }
+}
+.wrap-a{
+    height: 720px;
+}
+.wrap-a .detail-wrap{
+    height: 720px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrap-a .detail-wrap .detail-img{
+    animation-name: fadeIn; /*动画名称*/
+    animation-duration: 1s; /*动画持续时间*/
+    animation-iteration-count: 1; /*动画次数*/
+    animation-delay: 0s; /*延迟时间*/
+}
+.wrap-a .detail-wrap .detail-img .ic-01{
+    width: 660px;
+    height: 464px;
+    visibility: visible;
+    animation-name: fadeIn;
+}
+.wrap-a .detail-wrap .detail-des{
+    margin-left: 30px;
+    animation-name: fadeIn; /*动画名称*/
+    animation-duration: 1s; /*动画持续时间*/
+    animation-iteration-count: 1; /*动画次数*/
+    animation-delay: 0s; /*延迟时间*/
+
+}
+.wrap-a .detail-wrap .detail-des h2{
+    font-size: 44px;
+    margin-bottom: 30px;
+}
+.wrap-a .detail-wrap .detail-des h2 span{
+    color: dodgerblue;
+}
+.wrap-a .detail-wrap .detail-des p{
+    font-size: 16px;
+    line-height: 28px;
+    color: #666666;
+}
+/*section*/
+/*security*/
+.security{
+    height: 120px;
+}
+.security .security-link{
+    height: 120px;
+    background-color: #f5f7fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.security .security-link a{
+    padding: 0 80px;
+}
+/*footer*/
+#footer{
+    height: 305px;
+    background-color: #383b48;
+    color: #a8abb3;
+}
+#footer #ft-follow-us{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+#footer #ft-follow-us li a{
+    display: block;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+#footer #ft-follow-us li #weibo{
+    background-image: url("https://shared-https.ydstatic.com/market/ynote-website/weibo.svg");
+    width: 48px;
+    height: 48px;
+}
+#footer #ft-follow-us li #weibo:hover{
+    background-image: url("https://shared-https.ydstatic.com/market/ynote-website/weibo-hover.svg");
+}
+#footer #ft-follow-us li #wechat{
+    background-image: url("https://shared-https.ydstatic.com/market/ynote-website/wechat.svg");
+    width: 48px;
+    height: 48px;
+}
+#footer #ft-follow-us li #wechat img{
+    display: none;
+}
+#footer #ft-follow-us li #wechat:hover{
+    background-image: url("https://shared-https.ydstatic.com/market/ynote-website/wechat-hover.svg");
+}
+#footer #ft-follow-us li #wechat:hover img {
+    position: relative;
+    bottom: 181px;
+    right: 56px;
+    display: block;
+}
+#footer #ft-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 30px;
+}
+#footer #ft-links li a{
+    text-decoration: none;
+    color: #a8abb3;
+    font-size: 15px;
+    padding: 0 10px;
+}
+#footer #ft-about-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 30px;
+}
+#footer #ft-about-links li a{
+    text-decoration: none;
+    color: #a8abb3;
+    font-size: 14px;
+    padding: 0 10px;
+}
+#footer .ft-line{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    border-bottom: 1px white solid;
+    opacity: 0.1;
+}
+#footer #copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    color: #a8abb3;
+    opacity: 0.6;
+}

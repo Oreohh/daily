@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html  lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>注册</title>
+        <!--bootstrap.min.css-->
+        <link rel="stylesheet" href="css/bootstrap.min.css">      
+        <!--style.css-->
+        <link rel="stylesheet" href="css/style.css">
+		<!--jquery.js-->
+		<script src="js/jquery.js"></script>
+		<!--bootstrap.min.js-->
+		<script src="js/bootstrap.min.js"></script>
+		<!--bootstrap-show-password.min.js-->
+		<script src="js/bootstrap-show-password.min.js"></script>
+    </head>
+	
+	<body>
+		<!-- 登录 -->
+		<div class="container-fluid">
+			<div class="row">
+				<!-- 左 -->
+				<div class="col-sm-6">
+					<!-- 左侧图片 -->
+					<div class="sign-bgleft"></div>
+				</div>
+				<!-- 右 -->
+				<div class="col-sm-6">					
+					<div class="sign-content">
+						<h2>注&emsp;册</h2>
+						<!-- 登录表单 -->
+						<div class="signin-form">
+							<div class="form-group">
+								<label>账&emsp;号</label>
+								<input type="text" class="form-control" placeholder="请输入账号">
+							</div>
+							<div class="form-group">
+								<label>密&emsp;码</label>
+								<input type="password" id="password1" class="form-control" placeholder="请输入密码">
+							</div>
+							<div class="form-group">
+								<label>确认密码</label>
+								<input type="password" id="password2" class="form-control" placeholder="再次输入密码">
+							</div>
+						</div>
+						
+						<!-- 注册按钮 -->
+						<div class="signin-footer">
+							<button type="button" class="btn signin_btn">注&emsp;册</button>
+							<p>
+								已有账号? 现在登录!
+								 <a href="signin.html">登录</a>
+							</p>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+    </body>
+	<script>
+		$("#password1").password({
+		});
+		$('#password1').password('show');
+		$('#password1').password('hide');
+		$("#password2").password({
+		});
+		$('#password2').password('show');
+		$('#password2').password('hide');
+	</script>
+</html>

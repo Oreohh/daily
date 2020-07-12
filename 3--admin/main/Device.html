@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!-- 响应式设置viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>设备管理</title>
+		<!-- Bootstrap CSS -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<!-- jQuery -->
+		<script src="jquery/jquery-3.4.1.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<h2 class="sub-header">设备列表</h2>
+		<br />
+		
+		<form class="form-inline">
+		<!-- 查询 -->
+		  <div class="form-group">
+		    <label>设备编号：</label>
+		    <input type="text" class="form-control" placeholder="输入设备ID">
+			<button type="submit" class="btn btn-default">查询</button>
+		  </div>
+		  <div class="form-group">
+		    <label>设备名：</label>
+		    <input type="text" class="form-control" placeholder="请输入设备编号">
+			<button type="submit" class="btn btn-default">查询</button>
+		  </div>
+		<!-- /查询 -->
+		<!-- 添加 -->
+		<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal1">新增设备</button>
+		<!-- /添加 -->
+		</form>
+		  <!-- 添加Modal 弹窗窗口 -->
+		  <div class="modal fade" id="myModal1" >
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							<span>&times;</span><span class="sr-only">关闭弹窗</span>
+						</button>
+						<h4 class="modal-title" id="myModalLabel">添加设备</h4>
+					</div>
+					<div class="modal-body">
+						<div class="form-group">
+							<label>设备编号：</label>
+							<input type="text" class="form-control" placeholder="">
+						</div>
+						<div class="form-group">
+							<label>设备名：</label>
+							<input type="text" class="form-control" placeholder="">
+						</div>
+						<div class="form-group">
+							<label>设备状态：</label>
+							<input type="text" class="form-control" placeholder="">
+						</div>
+						<div class="form-group">
+							<label>创建时间：</label>
+							<input type="text" class="form-control" placeholder="">
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-info" data-dismiss="modal">关闭</button>
+						<button type="submit" id="btn-sumbit" class="btn btn-primary">添加</button>
+					</div>
+				</div>
+			</div>
+		  </div>
+		
+
+		<!-- 列表 -->
+		  <div class="table-responsive">
+			<table class="table table-striped">
+			  <thead>
+				<tr>
+				  <th>设备ID</th>
+				  <th>设备编号</th>
+				  <th>设备名</th>
+				  <th>设备状态</th>
+				  <th>创建时间</th>
+				  <th>更新时间</th>
+				  <th>操作</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr>
+				  <td>1</td>
+				  <td>Xx_001</td>
+				  <td>phone</td>
+				  <td>在线</td>
+				  <td>2020/2/3</td>
+				  <td>2002/3/2</td>
+				  <td>
+					  <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal2">编辑</button>
+					  
+					  <!-- 编辑Modal 弹窗窗口 -->
+					  <div class="modal fade" id="myModal2">
+					  	<div class="modal-dialog">
+					  		<div class="modal-content">
+					  			<div class="modal-header">
+					  				<button type="button" class="close" data-dismiss="modal">
+					  					<span>&times;</span><span class="sr-only">关闭弹窗</span>
+					  				</button>
+					  				<h4 class="modal-title" id="myModalLabel">编辑信息</h4>
+					  			</div>
+					  			<div class="modal-body">
+									<div class="form-group">
+										<label>设备编号：</label>
+										<input type="text" class="form-control" placeholder="">
+									</div>
+									<div class="form-group">
+										<label>设备名：</label>
+										<input type="text" class="form-control" placeholder="">
+									</div>
+									<div class="form-group">
+										<label>设备状态：</label>
+										<input type="text" class="form-control" placeholder="">
+									</div>
+					  			</div>
+					  			<div class="modal-footer">
+					  				<button type="button" class="btn btn-info" data-dismiss="modal">关闭</button>
+					  				<button type="submit" class="btn btn-primary">保存</button>
+					  			</div>
+					  		</div>
+					  	</div>
+					  </div>
+					  
+					  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal3">删除</button>
+					  <!-- 删除Modal 弹窗窗口 -->
+					  <div class="modal fade" id="myModal3">
+					  	<div class="modal-dialog">
+					  		<div class="modal-content">
+					  			<div class="modal-header">
+					  				<button type="button" class="close" data-dismiss="modal">
+					  					<span>&times;</span><span class="sr-only">关闭弹窗</span>
+					  				</button>
+					  				<h4 class="modal-title" id="myModalLabel">删除信息</h4>
+					  			</div>
+					  			<div class="modal-body">
+									<span>是否确认删除设备信息？</span>
+					  			</div>
+					  			<div class="modal-footer">
+					  				<button type="button" class="btn btn-info" data-dismiss="modal">关闭</button>
+					  				<button type="submit" class="btn btn-primary">删除</button>
+					  			</div>
+					  		</div>
+					  	</div>
+					  </div>
+				  </td>
+				</tr>
+			  </tbody>
+			  <!-- /列表 -->
+			</table>
+		  </div>
+	</body>
+</html>
